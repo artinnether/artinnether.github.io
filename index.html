@@ -179,6 +179,10 @@
       background: white;
     }
 
+    .mobile-curriculum-pages {
+      display: none;
+    }
+
     .resource-list {
       display: grid;
       gap: 10px;
@@ -602,9 +606,26 @@
 
     @media (max-width: 768px) {
       .curriculum-frame {
-        /* Fits both letter-size PDF pages in the mobile viewer. */
-        height: calc((100vw - 4rem) * 2.65);
-        min-height: 820px;
+        display: none;
+      }
+
+      .mobile-curriculum-pages {
+        display: grid;
+        gap: 16px;
+      }
+
+      .mobile-curriculum-pages a {
+        display: block;
+      }
+
+      .mobile-curriculum-pages img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border: 1px solid rgba(31, 42, 48, 0.12);
+        border-radius: 12px;
+        background: white;
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.10);
       }
 
       .site-nav {
@@ -1140,6 +1161,14 @@
           </div>
         </div>
         <iframe class="curriculum-frame" src="Omar_Corona_Tejeda_CV.pdf#view=FitH" title="Curriculum Vitae"></iframe>
+        <div class="mobile-curriculum-pages" aria-label="Curriculum Vitae">
+          <a href="Omar_Corona_Tejeda_CV.pdf" target="_blank" rel="noopener noreferrer">
+            <img src="assets/omar-corona-tejeda-cv-1.png" alt="Curriculum Vitae - page 1">
+          </a>
+          <a href="Omar_Corona_Tejeda_CV.pdf" target="_blank" rel="noopener noreferrer">
+            <img src="assets/omar-corona-tejeda-cv-2.png" alt="Curriculum Vitae - page 2">
+          </a>
+        </div>
       </div>
     </section>
 
