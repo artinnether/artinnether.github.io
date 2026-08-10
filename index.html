@@ -602,7 +602,9 @@
 
     @media (max-width: 768px) {
       .curriculum-frame {
-        min-height: 500px;
+        /* Fits both letter-size PDF pages in the mobile viewer. */
+        height: calc((100vw - 4rem) * 2.65);
+        min-height: 820px;
       }
 
       .site-nav {
