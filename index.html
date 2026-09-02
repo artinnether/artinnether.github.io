@@ -470,6 +470,22 @@
         repeating-radial-gradient(circle at 55% 50%, rgba(255,255,255,0.20) 0 1px, transparent 2px 18px);
     }
 
+    .paper-thumb--lie {
+      background: #f7faf9;
+    }
+
+    .paper-thumb--lie::before,
+    .paper-thumb--lie::after {
+      display: none;
+    }
+
+    .paper-thumb--lie img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
     .paper-thumb--relativity {
       background: linear-gradient(135deg, #1e293b, #687988);
     }
@@ -856,6 +872,20 @@
         <div class="resource-grid">
           <article class="resource-card">
             <div>
+              <a class="paper-thumb paper-thumb--lie" href="notas_algebras_lie_envolvente_universal.pdf" data-pdf-es="notas_algebras_lie_envolvente_universal.pdf" data-pdf-en="notes_lie_algebras_universal_enveloping_algebra.pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir notas sobre álgebras de Lie y álgebra envolvente universal">
+                <img src="assets/lie-rotaciones-infinitesimales.jpg" alt="Giros pequeños que se acumulan en una rotación finita" />
+              </a>
+              <span class="resource-pill" data-lang-es="Álgebras de Lie" data-lang-en="Lie algebras">Lie algebras</span>
+              <h4 class="text-xl font-bold mt-3" data-lang-es="De grupos de Lie al álgebra envolvente universal" data-lang-en="From Lie Groups to the Universal Enveloping Algebra">From Lie Groups to the Universal Enveloping Algebra</h4>
+              <p class="resource-note mt-2" data-lang-es="Notas sobre rotaciones infinitesimales, el álgebra de Lie asociada y la construcción del álgebra envolvente universal." data-lang-en="Notes on infinitesimal rotations, the associated Lie algebra, and the construction of the universal enveloping algebra.">Notes on infinitesimal rotations, the associated Lie algebra, and the construction of the universal enveloping algebra.</p>
+            </div>
+            <a href="notas_algebras_lie_envolvente_universal.pdf" data-pdf-es="notas_algebras_lie_envolvente_universal.pdf" data-pdf-en="notes_lie_algebras_universal_enveloping_algebra.pdf" target="_blank" rel="noopener noreferrer" class="icon-button inline-flex items-center gap-2 font-bold no-underline text-blue-700">
+              <i data-lucide="file-text"></i>
+              <span data-lang-es="Abrir PDF" data-lang-en="Open PDF">Open PDF</span>
+            </a>
+          </article>
+          <article class="resource-card">
+            <div>
               <a class="paper-thumb paper-thumb--operator" href="Algebras_C_estrella_y_Notacion_Daga_ES.pdf" data-pdf-es="Algebras_C_estrella_y_Notacion_Daga_ES.pdf" data-pdf-en="C_star_Algebras_and_Dagger_Notation_EN.pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir C*-álgebras y notación daga">
                 <span class="thumb-equation">||a*a|| = ||a||²</span>
                 <span class="thumb-symbol">†</span>
@@ -1030,6 +1060,10 @@
 
         <h4 id="materialHeading" class="resource-section-title" data-lang-es="Material" data-lang-en="Material">Material</h4>
         <div id="resourceGrid" class="resource-grid">
+          <article class="resource-card" data-category="algebra" data-search="algebras lie algebra envolvente universal lie groups grupos de lie infinitesimal rotations rotaciones infinitesimales universal enveloping algebra">
+            <div><span class="resource-pill" data-lang-es="Álgebras de Lie" data-lang-en="Lie algebras">Lie algebras</span><h4 class="text-xl font-bold mt-3" data-lang-es="De grupos de Lie al álgebra envolvente universal" data-lang-en="From Lie Groups to the Universal Enveloping Algebra">From Lie Groups to the Universal Enveloping Algebra</h4><p class="resource-note mt-2" data-lang-es="Notas sobre rotaciones infinitesimales, el álgebra de Lie asociada y la construcción del álgebra envolvente universal." data-lang-en="Notes on infinitesimal rotations, the associated Lie algebra, and the construction of the universal enveloping algebra.">Notes on infinitesimal rotations, the associated Lie algebra, and the construction of the universal enveloping algebra.</p></div>
+            <div class="flex gap-4"><a href="notas_algebras_lie_envolvente_universal.pdf" data-pdf-es="notas_algebras_lie_envolvente_universal.pdf" data-pdf-en="notes_lie_algebras_universal_enveloping_algebra.pdf" target="_blank" rel="noopener noreferrer" class="font-bold no-underline text-blue-700" data-lang-es="Abrir" data-lang-en="Open">Open</a><a href="notas_algebras_lie_envolvente_universal.pdf" data-pdf-es="notas_algebras_lie_envolvente_universal.pdf" data-pdf-en="notes_lie_algebras_universal_enveloping_algebra.pdf" download class="font-bold no-underline text-slate-700" data-lang-es="Descargar" data-lang-en="Download">Download</a></div>
+          </article>
           <article class="resource-card" data-category="algebra" data-search="c star algebra c estrella c dagger daga bounded operators hilbert adjoint operator norm dirac notation pauli matrices bloch sphere unbounded operators quantum mechanics operadores acotados adjunto notacion dirac matrices pauli esfera bloch">
             <div><span class="resource-pill" data-lang-es="Álgebras de operadores" data-lang-en="Operator algebras">Operator algebras</span><h4 class="text-xl font-bold mt-3" data-lang-es="C*-álgebras y notación daga" data-lang-en="C*-Algebras and Dagger Notation">C*-Algebras and Dagger Notation</h4><p class="resource-note mt-2" data-lang-es="Notas autocontenidas sobre C*-álgebras, operadores acotados, adjuntos de Hilbert, notación de Dirac, matrices de Pauli, esfera de Bloch y operadores no acotados." data-lang-en="Self-contained notes on C*-algebras, bounded operators, Hilbert adjoints, Dirac notation, Pauli matrices, the Bloch sphere, and unbounded operators.">Self-contained notes on C*-algebras, bounded operators, Hilbert adjoints, Dirac notation, Pauli matrices, the Bloch sphere, and unbounded operators.</p></div>
             <div class="flex gap-4"><a href="Algebras_C_estrella_y_Notacion_Daga_ES.pdf" data-pdf-es="Algebras_C_estrella_y_Notacion_Daga_ES.pdf" data-pdf-en="C_star_Algebras_and_Dagger_Notation_EN.pdf" target="_blank" rel="noopener noreferrer" class="font-bold no-underline text-blue-700" data-lang-es="Abrir" data-lang-en="Open">Open</a><a href="Algebras_C_estrella_y_Notacion_Daga_ES.pdf" data-pdf-es="Algebras_C_estrella_y_Notacion_Daga_ES.pdf" data-pdf-en="C_star_Algebras_and_Dagger_Notation_EN.pdf" download class="font-bold no-underline text-slate-700" data-lang-es="Descargar" data-lang-en="Download">Download</a></div>

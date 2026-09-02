@@ -7,6 +7,12 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://artinnether.github.io/the_mathematical_physics_project/papers/lie-groups-universal-enveloping-algebra.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://artinnether.github.io/the_mathematical_physics_project/papers/c-star-algebras-dagger-notation.html</loc>
     <lastmod>2026-07-16</lastmod>
     <changefreq>monthly</changefreq>
@@ -63,6 +69,18 @@
   <url>
     <loc>https://artinnether.github.io/the_mathematical_physics_project/papers/the-einbein-relativistic-systems.html</loc>
     <lastmod>2026-06-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://artinnether.github.io/the_mathematical_physics_project/notas_algebras_lie_envolvente_universal.pdf</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://artinnether.github.io/the_mathematical_physics_project/notes_lie_algebras_universal_enveloping_algebra.pdf</loc>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>

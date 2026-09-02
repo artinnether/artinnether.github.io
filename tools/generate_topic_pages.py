@@ -8,6 +8,17 @@ PAPERS_DIR = ROOT / "papers"
 
 PAPERS = [
     {
+        "slug": "lie-groups-universal-enveloping-algebra",
+        "title": "From Lie Groups to the Universal Enveloping Algebra",
+        "spanish_title": "De grupos de Lie al álgebra envolvente universal",
+        "pdf": "notes_lie_algebras_universal_enveloping_algebra.pdf",
+        "pdf_alt": "notas_algebras_lie_envolvente_universal.pdf",
+        "category": "Lie Algebras",
+        "description": "Notes on infinitesimal rotations, the Lie algebra associated with a Lie group, and the construction of the universal enveloping algebra.",
+        "keywords": "Lie groups, Lie algebras, infinitesimal rotations, universal enveloping algebra, generators, commutators, mathematical physics",
+        "lastmod": "2026-09-02",
+    },
+    {
         "slug": "c-star-algebras-dagger-notation",
         "title": "On C*-Algebras and the Dagger Notation",
         "spanish_title": "Sobre C*-álgebras y la notación daga",
@@ -105,6 +116,8 @@ PAPERS = [
 ]
 
 SITEMAP_PDFS = [
+    ("notas_algebras_lie_envolvente_universal.pdf", "2026-09-02", "0.9"),
+    ("notes_lie_algebras_universal_enveloping_algebra.pdf", "2026-09-02", "0.9"),
     ("Algebras_C_estrella_y_Notacion_Daga_ES.pdf", "2026-07-16", "0.9"),
     ("C_star_Algebras_and_Dagger_Notation_EN.pdf", "2026-07-16", "0.9"),
     ("Algebra_Homologica_en_la_Categoria_de_Modulos_ES.pdf", "2026-07-06", "0.8"),
