@@ -50,7 +50,7 @@ This is a static GitHub Pages site. Main files:
 - `tools/paper_thumbnails.json`: source PDF, page, crop coordinates, and language for each featured figure.
 - `tools/extract_paper_thumbnails.py`: reproduces the original PDF crops in `assets/` (requires `pdfplumber` and `Pillow`). Run `python3 tools/extract_paper_thumbnails.py` from the repository root.
 
-When adding a publication, include it in both Latest and the full library, and add every language variant to `resourceDates` in `index.html`. The main book stays first, followed by the newest dated publications. Featured images use `data-src-es` / `data-src-en` and translated alt text; use a shared crop only when it has no language-specific prose. Gauge and Klein-Gordon notes have no illustrations, so their thumbnails reproduce equations from the PDFs. The thumbnail manifest records the exact selection for every card.
+When adding a publication, include it in both Latest and the full library, and add every language variant to `resourceDates` in `index.html`. The full material library runs from oldest to newest, including the book in its chronological position. Latest publications and the separate exercises section keep their own ordering. Featured images use `data-src-es` / `data-src-en` and translated alt text; use a shared crop only when it has no language-specific prose. Gauge and Klein-Gordon notes have no illustrations, so their thumbnails reproduce equations from the PDFs. The thumbnail manifest records the exact selection for every card.
 
 ## Contact
 

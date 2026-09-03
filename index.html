@@ -1021,7 +1021,7 @@
         <div class="text-center max-w-3xl mx-auto mb-8">
           <p class="text-xs font-semibold tracking-[0.28em] uppercase text-slate-500 mb-2" data-lang-es="Biblioteca académica" data-lang-en="Academic library">Academic library</p>
           <h3 class="text-3xl font-bold mb-3" data-lang-es="Notas, libros y ejercicios" data-lang-en="Notes, books, and exercises">Notes, books, and exercises</h3>
-          <p class="text-slate-600" data-lang-es="Busca por título, tema o categoría. Las publicaciones más recientes aparecen primero después del libro principal y cada recurso se puede abrir o descargar." data-lang-en="Search by title, topic, or category. The newest publications appear first after the main book and each resource can be opened or downloaded.">Search by title, topic, or category. The newest publications appear first after the main book and each resource can be opened or downloaded.</p>
+          <p class="text-slate-600" data-lang-es="Busca por título, tema o categoría. La lista va de lo más antiguo a lo más reciente para mostrar la evolución del proyecto. Cada recurso se puede abrir o descargar." data-lang-en="Search by title, topic, or category. The list runs from oldest to newest to show the evolution of the project. Each resource can be opened or downloaded.">Search by title, topic, or category. The list runs from oldest to newest to show the evolution of the project. Each resource can be opened or downloaded.</p>
         </div>
 
         <div class="grid gap-4 mb-6">
@@ -1549,19 +1549,14 @@
 
     function sortResourcesChronologically() {
       resourceCards
-        .sort((a, b) => {
-          const aIsBook = getResourceHref(a) === 'Libro.pdf';
-          const bIsBook = getResourceHref(b) === 'Libro.pdf';
+        .filter((card) => card.dataset.category !== 'exercises')
+        .sort((a, b) => getResourceTimestamp(a) - getResourceTimestamp(b))
+        .forEach((card) => resourceGrid.appendChild(card));
 
-          if (aIsBook && !bIsBook) return -1;
-          if (!aIsBook && bIsBook) return 1;
-
-          return getResourceTimestamp(b) - getResourceTimestamp(a);
-        })
-        .forEach((card) => {
-          const targetGrid = card.dataset.category === 'exercises' ? exerciseGrid : resourceGrid;
-          targetGrid.appendChild(card);
-        });
+      resourceCards
+        .filter((card) => card.dataset.category === 'exercises')
+        .sort((a, b) => getResourceTimestamp(b) - getResourceTimestamp(a))
+        .forEach((card) => exerciseGrid.appendChild(card));
     }
 
     generateLatestPaperThumbnails();
