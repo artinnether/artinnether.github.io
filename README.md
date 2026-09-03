@@ -55,3 +55,5 @@ When adding a publication, include it in both Latest and the full library, and a
 ## Contact
 
 Use the contact form on the website or the social links in the footer.
+
+Library topics: keep each card’s broad `data-category` and add space-separated `data-topics` for more specific filters (`gauge`, `operator-algebras`, `lie-algebras`). Show matching bilingual pills on the card and provide a bilingual filter button for each topic. Search indexes Spanish and English titles, descriptions, and labels regardless of the selected display language.
