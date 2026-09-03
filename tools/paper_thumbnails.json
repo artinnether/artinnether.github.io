@@ -1,0 +1,267 @@
+[
+  {
+    "id": "lie-rotations",
+    "selection": "Figura 1: rotaciones infinitesimales",
+    "alt": {
+      "es": "Giros pequeños que se acumulan en una rotación finita",
+      "en": "Small rotations accumulating into a finite rotation"
+    },
+    "variants": {
+      "es": {
+        "pdf": "notas_algebras_lie_envolvente_universal.pdf",
+        "page": 5,
+        "bbox": [
+          120,
+          372,
+          492,
+          523
+        ],
+        "image": "assets/lie-rotations-es.png"
+      },
+      "en": {
+        "pdf": "notes_lie_algebras_universal_enveloping_algebra.pdf",
+        "page": 5,
+        "bbox": [
+          120,
+          372,
+          492,
+          523
+        ],
+        "image": "assets/lie-rotations-en.png"
+      }
+    }
+  },
+  {
+    "id": "c-star-map",
+    "selection": "Figura 1: mapa conceptual de C*-álgebras",
+    "alt": {
+      "es": "Mapa de un álgebra de Banach, la involución y la identidad C*",
+      "en": "Map of a Banach algebra, the involution, and the C* identity"
+    },
+    "variants": {
+      "es": {
+        "pdf": "Algebras_C_estrella_y_Notacion_Daga_ES.pdf",
+        "page": 1,
+        "bbox": [
+          142,
+          588,
+          470,
+          724
+        ],
+        "image": "assets/c-star-map-es.png"
+      },
+      "en": {
+        "pdf": "C_star_Algebras_and_Dagger_Notation_EN.pdf",
+        "page": 1,
+        "bbox": [
+          142,
+          588,
+          470,
+          724
+        ],
+        "image": "assets/c-star-map-en.png"
+      }
+    }
+  },
+  {
+    "id": "homological-diagram",
+    "selection": "Diagrama de la sucesión exacta en homología",
+    "alt": {
+      "es": "Diagrama conmutativo de una sucesión exacta de complejos de cadenas",
+      "en": "Commutative diagram of an exact sequence of chain complexes"
+    },
+    "variants": {
+      "es": {
+        "pdf": "Algebra_Homologica_en_la_Categoria_de_Modulos_ES.pdf",
+        "page": 5,
+        "bbox": [
+          195,
+          450,
+          415,
+          645
+        ],
+        "image": "assets/homological-diagram-es.png"
+      },
+      "en": {
+        "pdf": "Homological_Algebra_in_the_Category_of_Modules_EN.pdf",
+        "page": 5,
+        "bbox": [
+          195,
+          410,
+          415,
+          604
+        ],
+        "image": "assets/homological-diagram-en.png"
+      }
+    }
+  },
+  {
+    "id": "gauge-transformations",
+    "selection": "Ecuaciones 14 y 15: caso U(1); el documento no contiene figuras",
+    "alt": {
+      "es": "Transformaciones U(1) globales y locales extraídas del documento",
+      "en": "Global and local U(1) transformations extracted from the document"
+    },
+    "variants": {
+      "es": {
+        "pdf": "Transformaciones_Gauge_Globales_y_Locales_ES.pdf",
+        "page": 2,
+        "bbox": [
+          186,
+          683,
+          423,
+          733
+        ],
+        "image": "assets/gauge-transformations-es.png"
+      },
+      "en": {
+        "pdf": "Global_and_Local_Gauge_Transformations_EN.pdf",
+        "page": 2,
+        "bbox": [
+          186,
+          660,
+          423,
+          710
+        ],
+        "image": "assets/gauge-transformations-en.png"
+      }
+    }
+  },
+  {
+    "id": "feynman-poles",
+    "selection": "Figura 5: desplazamiento de los polos",
+    "alt": {
+      "es": "Desplazamiento de los polos en la prescripción de Feynman",
+      "en": "Displacement of the poles in the Feynman prescription"
+    },
+    "variants": {
+      "es": {
+        "pdf": "Feynman_Prescription_Residues_and_Real_Poles_ES.pdf",
+        "page": 15,
+        "bbox": [
+          198,
+          465,
+          416,
+          548
+        ],
+        "image": "assets/feynman-poles-es.png"
+      },
+      "en": {
+        "pdf": "Feynman_Prescription_Residues_and_Real_Poles_EN.pdf",
+        "page": 15,
+        "bbox": [
+          198,
+          307,
+          416,
+          390
+        ],
+        "image": "assets/feynman-poles-en.png"
+      }
+    }
+  },
+  {
+    "id": "phi4-diagrams",
+    "selection": "Diagramas de las ecuaciones 65 a 68, sin texto dependiente del idioma",
+    "alt": {
+      "es": "Diagramas de Feynman y sus factores en el modelo de dimensión cero",
+      "en": "Feynman diagrams and their factors in the zero-dimensional model"
+    },
+    "variants": {
+      "shared": {
+        "pdf": "Expansion_Perturbativa_y_Diagramas_de_Feynman_en_el_Modelo_lambda_phi4_de_Dimension_Cero.pdf",
+        "page": 9,
+        "bbox": [
+          105,
+          338,
+          472,
+          523
+        ],
+        "image": "assets/phi4-diagrams-shared.png"
+      }
+    }
+  },
+  {
+    "id": "klein-gordon-equation",
+    "selection": "Ecuación 6, sin texto dependiente del idioma; el documento no contiene figuras",
+    "alt": {
+      "es": "Ecuación de Klein-Gordon para el campo escalar",
+      "en": "Klein-Gordon equation for the scalar field"
+    },
+    "variants": {
+      "shared": {
+        "pdf": "Lorentz_Invariance_of_the_Klein_Gordon_Field_and_Action.pdf",
+        "page": 1,
+        "bbox": [
+          229,
+          660,
+          386,
+          698
+        ],
+        "image": "assets/klein-gordon-equation-shared.png"
+      }
+    }
+  },
+  {
+    "id": "dyson-ordering",
+    "selection": "Figura 1: región de integración temporal, solo notación matemática",
+    "alt": {
+      "es": "Región de integración para dos operadores ordenados temporalmente",
+      "en": "Integration region for two time-ordered operators"
+    },
+    "variants": {
+      "shared": {
+        "pdf": "Relacion entre el Vacio Libre, el Vacio Interactuante, Serie de Dyson y las Funciones de Correlacion.pdf",
+        "page": 2,
+        "bbox": [
+          107,
+          186,
+          505,
+          443
+        ],
+        "image": "assets/dyson-ordering-shared.png"
+      }
+    }
+  },
+  {
+    "id": "field-lagrangian",
+    "selection": "Detalle de la superficie de la figura 2, sin el rótulo en inglés del plano",
+    "alt": {
+      "es": "Superficie de la densidad lagrangiana de un campo",
+      "en": "Surface of the Lagrangian density of a field"
+    },
+    "variants": {
+      "shared": {
+        "pdf": "Field Variations on Vector Bundles with Connection A Unified Active and Passive Interpretation.pdf",
+        "page": 8,
+        "bbox": [
+          140,
+          88,
+          478,
+          248
+        ],
+        "image": "assets/field-lagrangian-shared.png"
+      }
+    }
+  },
+  {
+    "id": "adm-foliation",
+    "selection": "Figura 2.2: descomposición del elemento de línea, solo notación matemática",
+    "alt": {
+      "es": "Descomposición del elemento de línea entre hipersuperficies del espacio-tiempo",
+      "en": "Line-element decomposition between spacetime hypersurfaces"
+    },
+    "variants": {
+      "shared": {
+        "pdf": "epsilon-Ecuaciones Hamiltonianas de ADM de la Relatividad General.pdf",
+        "page": 23,
+        "bbox": [
+          142,
+          500,
+          447,
+          737
+        ],
+        "image": "assets/adm-foliation-shared.png"
+      }
+    }
+  }
+]
