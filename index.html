@@ -470,19 +470,21 @@
         repeating-radial-gradient(circle at 55% 50%, rgba(255,255,255,0.20) 0 1px, transparent 2px 18px);
     }
 
-    .paper-thumb--lie {
-      background: #f7faf9;
+    .paper-thumb--figure {
+      background: #fff;
     }
 
-    .paper-thumb--lie::before,
-    .paper-thumb--lie::after {
+    .paper-thumb--figure::before,
+    .paper-thumb--figure::after {
       display: none;
     }
 
-    .paper-thumb--lie img {
+    .paper-thumb--figure img {
+      display: block;
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      padding: 12px;
+      object-fit: contain;
       object-position: center;
     }
 
@@ -872,8 +874,8 @@
         <div class="resource-grid">
           <article class="resource-card">
             <div>
-              <a class="paper-thumb paper-thumb--lie" href="notas_algebras_lie_envolvente_universal.pdf" data-pdf-es="notas_algebras_lie_envolvente_universal.pdf" data-pdf-en="notes_lie_algebras_universal_enveloping_algebra.pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir notas sobre álgebras de Lie y álgebra envolvente universal">
-                <img src="assets/lie-rotaciones-infinitesimales.jpg" alt="Giros pequeños que se acumulan en una rotación finita" />
+              <a class="paper-thumb paper-thumb--figure" href="notas_algebras_lie_envolvente_universal.pdf" data-pdf-es="notas_algebras_lie_envolvente_universal.pdf" data-pdf-en="notes_lie_algebras_universal_enveloping_algebra.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open PDF: Small rotations accumulating into a finite rotation" data-aria-label-es="Abrir PDF: Giros pequeños que se acumulan en una rotación finita" data-aria-label-en="Open PDF: Small rotations accumulating into a finite rotation">
+                <img src="assets/lie-rotations-en.png" data-src-es="assets/lie-rotations-es.png" data-src-en="assets/lie-rotations-en.png" alt="Small rotations accumulating into a finite rotation" data-alt-es="Giros pequeños que se acumulan en una rotación finita" data-alt-en="Small rotations accumulating into a finite rotation" loading="lazy" decoding="async" />
               </a>
               <span class="resource-pill" data-lang-es="Álgebras de Lie" data-lang-en="Lie algebras">Lie algebras</span>
               <h4 class="text-xl font-bold mt-3" data-lang-es="De grupos de Lie al álgebra envolvente universal" data-lang-en="From Lie Groups to the Universal Enveloping Algebra">From Lie Groups to the Universal Enveloping Algebra</h4>
@@ -886,10 +888,8 @@
           </article>
           <article class="resource-card">
             <div>
-              <a class="paper-thumb paper-thumb--operator" href="Algebras_C_estrella_y_Notacion_Daga_ES.pdf" data-pdf-es="Algebras_C_estrella_y_Notacion_Daga_ES.pdf" data-pdf-en="C_star_Algebras_and_Dagger_Notation_EN.pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir C*-álgebras y notación daga">
-                <span class="thumb-equation">||a*a|| = ||a||²</span>
-                <span class="thumb-symbol">†</span>
-                <span class="thumb-lines"><span></span><span></span><span></span></span>
+              <a class="paper-thumb paper-thumb--figure" href="Algebras_C_estrella_y_Notacion_Daga_ES.pdf" data-pdf-es="Algebras_C_estrella_y_Notacion_Daga_ES.pdf" data-pdf-en="C_star_Algebras_and_Dagger_Notation_EN.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open PDF: Map of a Banach algebra, the involution, and the C* identity" data-aria-label-es="Abrir PDF: Mapa de un álgebra de Banach, la involución y la identidad C*" data-aria-label-en="Open PDF: Map of a Banach algebra, the involution, and the C* identity">
+                <img src="assets/c-star-map-en.png" data-src-es="assets/c-star-map-es.png" data-src-en="assets/c-star-map-en.png" alt="Map of a Banach algebra, the involution, and the C* identity" data-alt-es="Mapa de un álgebra de Banach, la involución y la identidad C*" data-alt-en="Map of a Banach algebra, the involution, and the C* identity" loading="lazy" decoding="async" />
               </a>
               <span class="resource-pill" data-lang-es="Álgebras de operadores" data-lang-en="Operator algebras">Operator algebras</span>
               <h4 class="text-xl font-bold mt-3" data-lang-es="C*-álgebras y notación daga" data-lang-en="C*-Algebras and Dagger Notation">C*-Algebras and Dagger Notation</h4>
@@ -902,10 +902,8 @@
           </article>
           <article class="resource-card">
             <div>
-              <a class="paper-thumb paper-thumb--algebra" href="Algebra_Homologica_en_la_Categoria_de_Modulos_ES.pdf" data-pdf-es="Algebra_Homologica_en_la_Categoria_de_Modulos_ES.pdf" data-pdf-en="Homological_Algebra_in_the_Category_of_Modules_EN.pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir Álgebra Homológica en la Categoría de Módulos">
-                <span class="thumb-equation">H_n(A)=ker d_n/im d_{n+1}</span>
-                <span class="thumb-symbol">Ext/Tor</span>
-                <span class="thumb-lines"><span></span><span></span><span></span></span>
+              <a class="paper-thumb paper-thumb--figure" href="Algebra_Homologica_en_la_Categoria_de_Modulos_ES.pdf" data-pdf-es="Algebra_Homologica_en_la_Categoria_de_Modulos_ES.pdf" data-pdf-en="Homological_Algebra_in_the_Category_of_Modules_EN.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open PDF: Commutative diagram of an exact sequence of chain complexes" data-aria-label-es="Abrir PDF: Diagrama conmutativo de una sucesión exacta de complejos de cadenas" data-aria-label-en="Open PDF: Commutative diagram of an exact sequence of chain complexes">
+                <img src="assets/homological-diagram-en.png" data-src-es="assets/homological-diagram-es.png" data-src-en="assets/homological-diagram-en.png" alt="Commutative diagram of an exact sequence of chain complexes" data-alt-es="Diagrama conmutativo de una sucesión exacta de complejos de cadenas" data-alt-en="Commutative diagram of an exact sequence of chain complexes" loading="lazy" decoding="async" />
               </a>
               <span class="resource-pill" data-lang-es="Álgebra" data-lang-en="Algebra">Algebra</span>
               <h4 class="text-xl font-bold mt-3" data-lang-es="Álgebra Homológica en la Categoría de Módulos" data-lang-en="Homological Algebra in the Category of Modules">Homological Algebra in the Category of Modules</h4>
@@ -918,10 +916,8 @@
           </article>
           <article class="resource-card">
             <div>
-              <a class="paper-thumb paper-thumb--bundle" href="Transformaciones_Gauge_Globales_y_Locales_ES.pdf" data-pdf-es="Transformaciones_Gauge_Globales_y_Locales_ES.pdf" data-pdf-en="Global_and_Local_Gauge_Transformations_EN.pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir Transformaciones gauge globales y locales">
-                <span class="thumb-equation">Dμ = ∂μ + ieAμ</span>
-                <span class="thumb-symbol">U(1)</span>
-                <span class="thumb-lines"><span></span><span></span><span></span></span>
+              <a class="paper-thumb paper-thumb--figure" href="Transformaciones_Gauge_Globales_y_Locales_ES.pdf" data-pdf-es="Transformaciones_Gauge_Globales_y_Locales_ES.pdf" data-pdf-en="Global_and_Local_Gauge_Transformations_EN.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open PDF: Global and local U(1) transformations extracted from the document" data-aria-label-es="Abrir PDF: Transformaciones U(1) globales y locales extraídas del documento" data-aria-label-en="Open PDF: Global and local U(1) transformations extracted from the document">
+                <img src="assets/gauge-transformations-en.png" data-src-es="assets/gauge-transformations-es.png" data-src-en="assets/gauge-transformations-en.png" alt="Global and local U(1) transformations extracted from the document" data-alt-es="Transformaciones U(1) globales y locales extraídas del documento" data-alt-en="Global and local U(1) transformations extracted from the document" loading="lazy" decoding="async" />
               </a>
               <span class="resource-pill" data-lang-es="Teoría gauge" data-lang-en="Gauge theory">Teoría gauge</span>
               <h4 class="text-xl font-bold mt-3" data-lang-es="Transformaciones gauge globales y locales" data-lang-en="Global and Local Gauge Transformations">Transformaciones gauge globales y locales</h4>
@@ -934,10 +930,8 @@
           </article>
           <article class="resource-card">
             <div>
-              <a class="paper-thumb paper-thumb--feynman" href="Feynman_Prescription_Residues_and_Real_Poles_ES.pdf" data-pdf-es="Feynman_Prescription_Residues_and_Real_Poles_ES.pdf" data-pdf-en="Feynman_Prescription_Residues_and_Real_Poles_EN.pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir Prescripción de Feynman, residuos y regularización de polos reales">
-                <span class="thumb-equation">PV ∫ f(x)/(x-a) dx</span>
-                <span class="thumb-symbol">+iε</span>
-                <span class="thumb-lines"><span></span><span></span><span></span></span>
+              <a class="paper-thumb paper-thumb--figure" href="Feynman_Prescription_Residues_and_Real_Poles_ES.pdf" data-pdf-es="Feynman_Prescription_Residues_and_Real_Poles_ES.pdf" data-pdf-en="Feynman_Prescription_Residues_and_Real_Poles_EN.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open PDF: Displacement of the poles in the Feynman prescription" data-aria-label-es="Abrir PDF: Desplazamiento de los polos en la prescripción de Feynman" data-aria-label-en="Open PDF: Displacement of the poles in the Feynman prescription">
+                <img src="assets/feynman-poles-en.png" data-src-es="assets/feynman-poles-es.png" data-src-en="assets/feynman-poles-en.png" alt="Displacement of the poles in the Feynman prescription" data-alt-es="Desplazamiento de los polos en la prescripción de Feynman" data-alt-en="Displacement of the poles in the Feynman prescription" loading="lazy" decoding="async" />
               </a>
               <span class="resource-pill" data-lang-es="Teoría cuántica" data-lang-en="Quantum theory">Quantum theory</span>
               <h4 class="text-xl font-bold mt-3" data-lang-es="Prescripción de Feynman, residuos y regularización de polos reales" data-lang-en="Feynman Prescription, Residues, and Regularization of Real Poles">Feynman Prescription, Residues, and Regularization of Real Poles</h4>
@@ -950,10 +944,8 @@
           </article>
           <article class="resource-card">
             <div>
-              <a class="paper-thumb paper-thumb--phi4" href="Expansion_Perturbativa_y_Diagramas_de_Feynman_en_el_Modelo_lambda_phi4_de_Dimension_Cero.pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir Expansión Perturbativa y Diagramas de Feynman">
-                <span class="thumb-equation">Z = ∫ exp(-λϕ4) dϕ</span>
-                <span class="thumb-symbol">λϕ4</span>
-                <span class="thumb-lines"><span></span><span></span><span></span></span>
+              <a class="paper-thumb paper-thumb--figure" href="Expansion_Perturbativa_y_Diagramas_de_Feynman_en_el_Modelo_lambda_phi4_de_Dimension_Cero.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open PDF: Feynman diagrams and their factors in the zero-dimensional model" data-aria-label-es="Abrir PDF: Diagramas de Feynman y sus factores en el modelo de dimensión cero" data-aria-label-en="Open PDF: Feynman diagrams and their factors in the zero-dimensional model">
+                <img src="assets/phi4-diagrams-shared.png" data-src-es="assets/phi4-diagrams-shared.png" data-src-en="assets/phi4-diagrams-shared.png" alt="Feynman diagrams and their factors in the zero-dimensional model" data-alt-es="Diagramas de Feynman y sus factores en el modelo de dimensión cero" data-alt-en="Feynman diagrams and their factors in the zero-dimensional model" loading="lazy" decoding="async" />
               </a>
               <span class="resource-pill" data-lang-es="Teoría cuántica" data-lang-en="Quantum theory">Quantum theory</span>
               <h4 class="text-xl font-bold mt-3" data-lang-es="Expansión Perturbativa y Diagramas de Feynman en el Modelo λϕ4 de Dimensión Cero" data-lang-en="Perturbative Expansion and Feynman Diagrams in the Zero-Dimensional λϕ4 Model">Perturbative Expansion and Feynman Diagrams in the Zero-Dimensional λϕ4 Model</h4>
@@ -966,10 +958,8 @@
           </article>
           <article class="resource-card">
             <div>
-              <a class="paper-thumb paper-thumb--klein" href="Lorentz_Invariance_of_the_Klein_Gordon_Field_and_Action.pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir Invariancia de Lorentz del campo y la acción de Klein-Gordon">
-                <span class="thumb-equation">(□ + m²)ϕ = 0</span>
-                <span class="thumb-symbol">Λ</span>
-                <span class="thumb-lines"><span></span><span></span><span></span></span>
+              <a class="paper-thumb paper-thumb--figure" href="Lorentz_Invariance_of_the_Klein_Gordon_Field_and_Action.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open PDF: Klein-Gordon equation for the scalar field" data-aria-label-es="Abrir PDF: Ecuación de Klein-Gordon para el campo escalar" data-aria-label-en="Open PDF: Klein-Gordon equation for the scalar field">
+                <img src="assets/klein-gordon-equation-shared.png" data-src-es="assets/klein-gordon-equation-shared.png" data-src-en="assets/klein-gordon-equation-shared.png" alt="Klein-Gordon equation for the scalar field" data-alt-es="Ecuación de Klein-Gordon para el campo escalar" data-alt-en="Klein-Gordon equation for the scalar field" loading="lazy" decoding="async" />
               </a>
               <span class="resource-pill" data-lang-es="Teoría cuántica" data-lang-en="Quantum theory">Quantum theory</span>
               <h4 class="text-xl font-bold mt-3" data-lang-es="Invariancia de Lorentz del campo y la acción de Klein-Gordon" data-lang-en="Lorentz Invariance of the Klein-Gordon Field and Action">Lorentz Invariance of the Klein-Gordon Field and Action</h4>
@@ -982,10 +972,8 @@
           </article>
           <article class="resource-card">
             <div>
-              <a class="paper-thumb paper-thumb--dyson" href="Relacion entre el Vacio Libre, el Vacio Interactuante, Serie de Dyson y las Funciones de Correlacion.pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir Vacío libre, vacío interactuante, serie de Dyson y funciones de correlación">
-                <span class="thumb-equation">T exp[-i∫Hᵢ(t)dt]</span>
-                <span class="thumb-symbol">Ω</span>
-                <span class="thumb-lines"><span></span><span></span><span></span></span>
+              <a class="paper-thumb paper-thumb--figure" href="Relacion entre el Vacio Libre, el Vacio Interactuante, Serie de Dyson y las Funciones de Correlacion.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open PDF: Integration region for two time-ordered operators" data-aria-label-es="Abrir PDF: Región de integración para dos operadores ordenados temporalmente" data-aria-label-en="Open PDF: Integration region for two time-ordered operators">
+                <img src="assets/dyson-ordering-shared.png" data-src-es="assets/dyson-ordering-shared.png" data-src-en="assets/dyson-ordering-shared.png" alt="Integration region for two time-ordered operators" data-alt-es="Región de integración para dos operadores ordenados temporalmente" data-alt-en="Integration region for two time-ordered operators" loading="lazy" decoding="async" />
               </a>
               <span class="resource-pill" data-lang-es="Teoría cuántica" data-lang-en="Quantum theory">Quantum theory</span>
               <h4 class="text-xl font-bold mt-3" data-lang-es="Vacío libre, vacío interactuante, serie de Dyson y funciones de correlación" data-lang-en="Free Vacuum, Interacting Vacuum, Dyson Series and Correlation Functions">Free Vacuum, Interacting Vacuum, Dyson Series and Correlation Functions</h4>
@@ -998,10 +986,8 @@
           </article>
           <article class="resource-card">
             <div>
-              <a class="paper-thumb paper-thumb--bundle" href="Field Variations on Vector Bundles with Connection A Unified Active and Passive Interpretation.pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir Variaciones de campos en haces vectoriales con conexión">
-                <span class="thumb-equation">∇s + δA</span>
-                <span class="thumb-symbol">π:E→M</span>
-                <span class="thumb-lines"><span></span><span></span><span></span></span>
+              <a class="paper-thumb paper-thumb--figure" href="Field Variations on Vector Bundles with Connection A Unified Active and Passive Interpretation.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open PDF: Surface of the Lagrangian density of a field" data-aria-label-es="Abrir PDF: Superficie de la densidad lagrangiana de un campo" data-aria-label-en="Open PDF: Surface of the Lagrangian density of a field">
+                <img src="assets/field-lagrangian-shared.png" data-src-es="assets/field-lagrangian-shared.png" data-src-en="assets/field-lagrangian-shared.png" alt="Surface of the Lagrangian density of a field" data-alt-es="Superficie de la densidad lagrangiana de un campo" data-alt-en="Surface of the Lagrangian density of a field" loading="lazy" decoding="async" />
               </a>
               <span class="resource-pill" data-lang-es="Geometría" data-lang-en="Geometry">Geometry</span>
               <h4 class="text-xl font-bold mt-3" data-lang-es="Variaciones de campos en haces vectoriales con conexión" data-lang-en="Field Variations on Vector Bundles with Connection">Field Variations on Vector Bundles with Connection</h4>
@@ -1014,10 +1000,8 @@
           </article>
           <article class="resource-card">
             <div>
-              <a class="paper-thumb paper-thumb--adm" href="epsilon-Ecuaciones Hamiltonianas de ADM de la Relatividad General.pdf" target="_blank" rel="noopener noreferrer" aria-label="Abrir ε-Ecuaciones Hamiltonianas de ADM">
-                <span class="thumb-equation">H = Nℋ + Nᵢℋⁱ</span>
-                <span class="thumb-symbol">εADM</span>
-                <span class="thumb-lines"><span></span><span></span><span></span></span>
+              <a class="paper-thumb paper-thumb--figure" href="epsilon-Ecuaciones Hamiltonianas de ADM de la Relatividad General.pdf" target="_blank" rel="noopener noreferrer" aria-label="Open PDF: Line-element decomposition between spacetime hypersurfaces" data-aria-label-es="Abrir PDF: Descomposición del elemento de línea entre hipersuperficies del espacio-tiempo" data-aria-label-en="Open PDF: Line-element decomposition between spacetime hypersurfaces">
+                <img src="assets/adm-foliation-shared.png" data-src-es="assets/adm-foliation-shared.png" data-src-en="assets/adm-foliation-shared.png" alt="Line-element decomposition between spacetime hypersurfaces" data-alt-es="Descomposición del elemento de línea entre hipersuperficies del espacio-tiempo" data-alt-en="Line-element decomposition between spacetime hypersurfaces" loading="lazy" decoding="async" />
               </a>
               <span class="resource-pill" data-lang-es="Relatividad" data-lang-en="Relativity">Relativity</span>
               <h4 class="text-xl font-bold mt-3" data-lang-es="ε-Ecuaciones Hamiltonianas de ADM" data-lang-en="ε-Hamiltonian ADM Equations">ε-Hamiltonian ADM Equations</h4>
@@ -1037,7 +1021,7 @@
         <div class="text-center max-w-3xl mx-auto mb-8">
           <p class="text-xs font-semibold tracking-[0.28em] uppercase text-slate-500 mb-2" data-lang-es="Biblioteca académica" data-lang-en="Academic library">Academic library</p>
           <h3 class="text-3xl font-bold mb-3" data-lang-es="Notas, libros y ejercicios" data-lang-en="Notes, books, and exercises">Notes, books, and exercises</h3>
-          <p class="text-slate-600" data-lang-es="Busca por título, tema o categoría. La lista se mantiene en orden cronológico y cada recurso se puede abrir o descargar." data-lang-en="Search by title, topic, or category. The list stays in chronological order and each resource can be opened or downloaded.">Search by title, topic, or category. The list stays in chronological order and each resource can be opened or downloaded.</p>
+          <p class="text-slate-600" data-lang-es="Busca por título, tema o categoría. Las publicaciones más recientes aparecen primero después del libro principal y cada recurso se puede abrir o descargar." data-lang-en="Search by title, topic, or category. The newest publications appear first after the main book and each resource can be opened or downloaded.">Search by title, topic, or category. The newest publications appear first after the main book and each resource can be opened or downloaded.</p>
         </div>
 
         <div class="grid gap-4 mb-6">
@@ -1346,6 +1330,8 @@
     const filterButtons = Array.from(document.querySelectorAll('[data-filter]'));
     const emptyResources = document.getElementById('emptyResources');
     const resourceDates = {
+      'notas_algebras_lie_envolvente_universal.pdf': '2026-09-02T23:25:35Z',
+      'notes_lie_algebras_universal_enveloping_algebra.pdf': '2026-09-02T23:25:35Z',
       'Algebras_C_estrella_y_Notacion_Daga_ES.pdf': '2026-07-16T00:00:00',
       'C_star_Algebras_and_Dagger_Notation_EN.pdf': '2026-07-16T00:00:00',
       'Algebra_Homologica_en_la_Categoria_de_Modulos_ES.pdf': '2026-07-06T09:26:00',
@@ -1459,6 +1445,7 @@
       toggleBtn.textContent = lang === 'es' ? 'ES / EN' : 'EN / ES';
       overlay.classList.add('hidden');
       updateLocalizedPdfLinks();
+      updateLocalizedImages();
       makeResourceTitlesClickable();
       renderResourceFilters();
     }
@@ -1473,6 +1460,19 @@
         if (link.hasAttribute('download')) {
           link.setAttribute('download', href);
         }
+      });
+    }
+
+    function updateLocalizedImages() {
+      const lang = currentLang || 'en';
+
+      document.querySelectorAll('img[data-src-es][data-src-en]').forEach((img) => {
+        img.setAttribute('src', img.getAttribute(`data-src-${lang}`));
+        img.setAttribute('alt', img.getAttribute(`data-alt-${lang}`));
+      });
+
+      document.querySelectorAll('[data-aria-label-es][data-aria-label-en]').forEach((el) => {
+        el.setAttribute('aria-label', el.getAttribute(`data-aria-label-${lang}`));
       });
     }
 
@@ -1556,7 +1556,7 @@
           if (aIsBook && !bIsBook) return -1;
           if (!aIsBook && bIsBook) return 1;
 
-          return getResourceTimestamp(a) - getResourceTimestamp(b);
+          return getResourceTimestamp(b) - getResourceTimestamp(a);
         })
         .forEach((card) => {
           const targetGrid = card.dataset.category === 'exercises' ? exerciseGrid : resourceGrid;
