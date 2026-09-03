@@ -264,56 +264,13 @@
       background: rgba(255, 255, 255, 0.58);
     }
 
-    #latest {
-      width: min(96rem, calc(100vw - 48px));
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    #latest > .glass-card {
-      max-width: none;
-    }
-
     #latest .resource-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
 
     #latest .resource-card {
       overflow: hidden;
-      padding: 24px;
-    }
-
-    #latest .resource-card h4 {
-      font-size: 1.5rem;
-      line-height: 1.35;
-    }
-
-    #latest .resource-note {
-      font-size: 1.125rem;
-      line-height: 1.65;
-    }
-
-    @media (min-width: 1200px) {
-      #latest .resource-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-
-      #latest .resource-note {
-        font-size: 1.25rem;
-      }
-    }
-
-    @media (max-width: 767px) {
-      #latest .resource-grid {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      #latest > .glass-card,
-      #latest .resource-card {
-        padding: 20px;
-      }
+      padding: 16px;
     }
 
     .paper-thumb {
@@ -1064,7 +1021,7 @@
         <div class="text-center max-w-3xl mx-auto mb-8">
           <p class="text-xs font-semibold tracking-[0.28em] uppercase text-slate-500 mb-2" data-lang-es="Biblioteca académica" data-lang-en="Academic library">Academic library</p>
           <h3 class="text-3xl font-bold mb-3" data-lang-es="Notas, libros y ejercicios" data-lang-en="Notes, books, and exercises">Notes, books, and exercises</h3>
-          <p class="text-slate-600" data-lang-es="Busca por título, tema o categoría. La lista va de lo más antiguo a lo más reciente para mostrar la evolución del proyecto. Cada recurso se puede abrir o descargar." data-lang-en="Search by title, topic, or category. The list runs from oldest to newest to show the evolution of the project. Each resource can be opened or downloaded.">Search by title, topic, or category. The list runs from oldest to newest to show the evolution of the project. Each resource can be opened or downloaded.</p>
+          <p class="text-slate-600" data-lang-es="Busca por título, tema o categoría. El Libro encabeza la lista; los demás materiales van de lo más antiguo a lo más reciente para mostrar la evolución del proyecto. Cada recurso se puede abrir o descargar." data-lang-en="Search by title, topic, or category. The Book heads the list; the remaining materials run from oldest to newest to show the evolution of the project. Each resource can be opened or downloaded.">Search by title, topic, or category. The Book heads the list; the remaining materials run from oldest to newest to show the evolution of the project. Each resource can be opened or downloaded.</p>
         </div>
 
         <div class="grid gap-4 mb-6">
@@ -1593,7 +1550,11 @@
     function sortResourcesChronologically() {
       resourceCards
         .filter((card) => card.dataset.category !== 'exercises')
-        .sort((a, b) => getResourceTimestamp(a) - getResourceTimestamp(b))
+        .sort((a, b) => {
+          const aIsBook = getResourceHref(a) === 'Libro.pdf';
+          const bIsBook = getResourceHref(b) === 'Libro.pdf';
+          return Number(bIsBook) - Number(aIsBook) || getResourceTimestamp(a) - getResourceTimestamp(b);
+        })
         .forEach((card) => resourceGrid.appendChild(card));
 
       resourceCards
